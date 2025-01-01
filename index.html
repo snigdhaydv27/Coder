@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="jpg" href="../img/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder</title>
+    <style>
+      html, body {
+          overflow: hidden;
+          margin: 0;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+        background-color: #000000;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .header {
+        background-color: #000000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/coder.jpg" alt="coder"  style="height: 5rem; width: 10rem; ">
+    </header>
+    <div id="root"></div>
+    <footer class="footer">
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Coder. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

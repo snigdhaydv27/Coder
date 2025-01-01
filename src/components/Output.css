@@ -1,0 +1,60 @@
+/* Output.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+.output-container {
+    width: 50%;
+    padding: 16px;
+  }
+  
+  .output-container h2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .output-container .btn-head {
+    margin-bottom: 16px;
+  }
+  
+  .run-code-btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .run-code-btn:hover {
+    background-color: #218838;
+  }
+  
+  .run-code-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .run-code-btn.loading {
+    background-color: #ffc107;
+  }
+  
+  .output-box {
+    height: 75vh;
+    padding: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
+  
+  .output-box.error {
+    color: red;
+    border-color: red;
+  }
+  
